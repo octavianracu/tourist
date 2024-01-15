@@ -9,3 +9,5 @@ class Money:
   def  __str__(self):
     for i in Money._currencies:
         return f"{self.amount}{Money._currencies[i]}"      # e.g. "100.00MDL"
+  def get_amount(self):
+        return self.amount
